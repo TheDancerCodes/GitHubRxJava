@@ -30,6 +30,13 @@ public class GitHubClient {
         final Gson gson =
             new GsonBuilder().setFieldNamingPolicy(FieldNamingPolicy.LOWER_CASE_WITH_UNDERSCORES).create();
 
+        /**
+         * When constructing an implementation of GitHubService through Retrofit,
+         * we need to pass in an RxJavaCallAdapterFactory as the call adapter so that network calls
+         * can return Observable objects.
+         *
+         * Pass in a GsonConverterFactory so that we can use Gson as a way to marshal JSON objects to Java objects.
+         */
         final Retrofit retrofit = new Retrofit.Builder().baseUrl(GITHUB_BASE_URL)
                 .addCallAdapterFactory(RxJavaCallAdapterFactory.create())
                 .addConverterFactory(GsonConverterFactory.create(gson))
