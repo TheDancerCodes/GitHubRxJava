@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
         subscription = GitHubClient.getInstance()
                                    .getStarredRepos(username)
                                    .subscribeOn(Schedulers.io())
-                                   .observeOn(AndroidSchedulers.mainThread)
+                                   .observeOn(AndroidSchedulers.mainThread())
                                    .subscribe(new Observer<List<GitHubRepo>>() {
                                        @Override
                                        public void onCompleted() {
