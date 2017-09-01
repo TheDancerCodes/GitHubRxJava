@@ -5,6 +5,6 @@ In this example, we will look at [Retrofit](http://square.github.io/retrofit/), 
 
 Specifically, we’ll create a simple app that presents all the starred repositories for a user given a GitHub username.
 
-This is an exercise repository for the GitHubRxJava example app which is part of the [Meet RxJava: The Missing Reactive Programming Library for Android](https://www.udacity.com/course/advanced-android-app-development--ud855)article.
+This is an exercise repository for the GitHubRxJava example app which is part of the [Meet RxJava: The Missing Reactive Programming Library for Android](https://www.toptal.com/android/functional-reactive-android-rxjava) article.
 
-Credit to @arriolac
+Credit to [@arriolac](https://github.com/arriolac)
